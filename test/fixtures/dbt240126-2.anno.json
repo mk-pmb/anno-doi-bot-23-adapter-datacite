@@ -1,0 +1,55 @@
+{ "@context": "http://www.w3.org/ns/anno.jsonld",
+  "type": ["Annotation"],
+  "id": "doibot-datacite-test-240126~2",
+  "created": "2023-08-15T08:23:00Z",
+  "dc:title": "DataCite DOI Bot Adapter Test",
+  "body": [
+    { "type": "TextualBody",
+      "format": "text/html",
+      "value": "<p>Dieser Text ist auf deutsch verfasst.</p>"
+    },
+    { "type": "SpecificResource",
+      "purpose": "classifying",
+      "source": "https://d-nb.info/gnd/7694956-4",
+      "dc:title": "Digital Object Identifier"
+    },
+    { "type": "SpecificResource",
+      "purpose": "classifying",
+      "source": "https://d-nb.info/gnd/4328846-7",
+      "dc:title": "Ansetzungsform"
+    },
+    { "type": "SpecificResource",
+      "purpose": "linking",
+      "rdf:predicate": "http://purl.org/dc/terms/requires",
+      "source": "https://support.datacite.org/docs/api",
+      "dc:title": "DataCite API"
+    }
+  ],
+  "creator": {
+    "email": "jscarberry@example.net",
+    "homepage": [
+      "https://library.brown.edu/info/hay/carberry/",
+      { "@context": "http://schema.org/",
+        "@type": "Webpage",
+        "description": "Example for how to convey ROR affiliation to our DOI bot.",
+        "name": "Brown University",
+        "url": "https://ror.org/05gq02987"
+      }
+    ],
+    "iana:alternate": [
+      "https://orcid.org/0000-0002-1825-0097"
+    ],
+    "id": "urn:uuid:f84bf67c-c3c6-5221-a854-6364fe06182d",
+    "name": "Josiah S. Carberry",
+    "type": "Person"
+  },
+  "dc:language": "de-DE",
+  "dc:isVersionOf": "doibot-datacite-test-240126",
+  "dc:replaces": "http://localhost:33321/anno/doibot-datacite-test-240126~1",
+  "iana:latest-version": "http://localhost:33321/anno/doibot-datacite-test-240126",
+  "iana:version-history": "doibot-datacite-test-240126/versions",
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "target": [
+    { "id": "https://journals.ub.uni-heidelberg.de/index.php/arch-inf/article/view/69356" }
+  ]
+}
