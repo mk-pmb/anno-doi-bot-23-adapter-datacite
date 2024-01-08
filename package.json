@@ -1,5 +1,5 @@
 { "name": "anno-doi-bot-23-adapter-datacite",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "DataCite adapter for anno-doi-bot-23.",
   "keywords": [
     "annotation",
@@ -29,6 +29,7 @@
 
   "dependencies": {
     "array-of-truths": "^1.0.0",
+    "exit-code": "^1.0.2",
     "getown": "^1.0.0",
     "is-string": "^1.0.7",
     "must-lookup-prop-in-dict-pmb": "^1.0.2",
