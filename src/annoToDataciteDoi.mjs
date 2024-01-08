@@ -16,14 +16,23 @@ import rightsListDb from './rightsListDb.mjs';
 import transformAuthor from './transformAuthor.mjs';
 
 
+function orUnav(x) { return x || ':unav'; } /*
+  For some fields, like `attributes.language`, DataCite has a special
+  marker `:unav` to convey "value unavailable, possibly unknown".
+  As a counter-example, `attributes.titles[].lang` expects `null`;
+  sending `:unav` there would result in error
+  `{ "source": "metadata", "title": "Is invalid" }`.
+*/
+
+
 const EX = {
 
   async nodemjsCliMain() {
     const anno = await readOneStdinRecord();
     const mustEnv = mustBe.tProp('env var ', process.env);
     const cfg = {
-      doiPrefix: mustEnv.nest('cfg_doi_prefix'),
-      initialVersionDate: mustEnv('str | undef', 'anno_initial_version_date'),
+      expectedDoi: mustEnv.nest('anno_doi_expect'),
+      initialVersionDate: mustEnv.nest('anno_initial_version_date'),
     };
     console.log(JSON.stringify(EX.convert(cfg, anno), null, 2));
   },
@@ -32,7 +41,7 @@ const EX = {
   convert(cfg, anno) {
     const popAnno = objPop(anno, { mustBe }).mustBe;
     const annoIdUrl = popAnno.nest('id');
-    const { baseId, versNum } = EX.parseVersId(annoIdUrl);
+    const { versNum } = EX.parseVersId(annoIdUrl);
     const prevReviUrl = popAnno('nonEmpty str | undef', 'dc:replaces');
     const hasPreviousVersion = Boolean(prevReviUrl);
 
@@ -45,7 +54,7 @@ const EX = {
       schemaVersion: 'http://datacite.org/schema/kernel-4.4',
       url: annoIdUrl,
       version: versNum,
-      doi: cfg.doiPrefix + baseId + '_' + versNum,
+      doi: cfg.expectedDoi,
       ...fmtDateAttrs(popAnno, { ...cfg, hasPreviousVersion }),
       types: {
         resourceType: 'Annotation',
@@ -72,9 +81,8 @@ const EX = {
       textBodyLanguages,
       relationLinks,
     } = parseBodies(popAnno);
-    const firstBodyLanguage = (textBodyLanguages[0]
-      || ':unav');  // DataCite: "value unavailable, possibly unknown"
-    attr.language = (popAnno('undef | str', 'dc:language')
+    const firstBodyLanguage = (textBodyLanguages[0] || null);
+    attr.language = orUnav(popAnno('undef | str', 'dc:language')
       || firstBodyLanguage);
 
     attr.subjects = [

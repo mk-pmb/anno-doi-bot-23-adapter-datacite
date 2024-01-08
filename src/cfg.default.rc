@@ -1,0 +1,10 @@
+# -*- coding: utf-8, tab-width: 2 -*-
+
+CFG[datacite_api_server]='https://api.test.datacite.org/'
+CFG[datacite_repo_user]='DATACITE.USERNAME'
+
+# In your actual config directory, you may want to make a separate
+# .rc file for just the password line, and git-ignore that.
+CFG[datacite_repo_pswd]='DataCitePlainTextPasswordHere'
+
+eval "$DOCKER_DOIBOT_CFG_DATACITE_OVERRIDES"
