@@ -72,10 +72,10 @@ const EX = {
       textBodyLanguages,
       relationLinks,
     } = parseBodies(popAnno);
-    const firstBodyLanguage = (textBodyLanguages[0] || null);
-    attr.language = (popAnno('undef | str', 'dc:language')
-      || firstBodyLanguage
+    const firstBodyLanguage = (textBodyLanguages[0]
       || ':unav');  // DataCite: "value unavailable, possibly unknown"
+    attr.language = (popAnno('undef | str', 'dc:language')
+      || firstBodyLanguage);
 
     attr.subjects = [
       ...gndSubjects,
