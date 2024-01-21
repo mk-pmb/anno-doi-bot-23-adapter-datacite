@@ -5,6 +5,7 @@ import 'usnam-pmb';
 
 import arrayOfTruths from 'array-of-truths';
 import guessSubjectTargets from 'webanno-guess-subject-target-url-pmb';
+import libDoi from 'doi-utils-pmb';
 import mustBe from 'typechecks-pmb/must-be.js';
 import objPop from 'objpop';
 
@@ -31,7 +32,7 @@ const EX = {
     const anno = await readOneStdinRecord();
     const mustEnv = mustBe.tProp('env var ', process.env);
     const cfg = {
-      expectedDoi: mustEnv.nest('anno_doi_expect'),
+      expectedDoi: libDoi.expectBareDoi(mustEnv.nest('anno_doi_expect')),
       initialVersionDate: mustEnv.nest('anno_initial_version_date'),
     };
     console.log(JSON.stringify(EX.convert(cfg, anno), null, 2));
