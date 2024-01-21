@@ -29,6 +29,7 @@
 
   "dependencies": {
     "array-of-truths": "^1.0.0",
+    "doi-utils-pmb": "^0.1.0",
     "exit-code": "^1.0.2",
     "getown": "^1.0.0",
     "is-string": "^1.0.7",
