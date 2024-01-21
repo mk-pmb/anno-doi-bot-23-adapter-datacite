@@ -1,0 +1,28 @@
+{ "@context": "http://www.w3.org/ns/anno.jsonld",
+  "type": ["Annotation"],
+  "id": "test-esau-spam-rsterr~1",
+  "body": [
+    {
+      "format": "text/html",
+      "type": "TextualBody",
+      "value": "<p>#1</p>"
+    }
+  ],
+  "created": "2023-06-22T16:01:01Z",
+  "creator": {
+    "id": "urn:uuid:455e5f04-22f9-49b8-95be-dcaea3065654",
+    "name": "R. Sterr",
+    "type": "Person"
+  },
+  "dc:dateAccepted": "2023-06-22T16:02:03.000Z",
+  "dc:isVersionOf": "test-esau-spam-rsterr",
+  "dc:title": "Erster!!!1! 💯",
+  "iana:latest-version": "test-esau-spam-rsterr",
+  "iana:version-history": "test-esau-spam-rsterr/versions",
+  "target": [
+    {
+      "id": "https://digi.ub.uni-heidelberg.de/diglit/cpg148/0074"
+    }
+  ],
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/"
+}
