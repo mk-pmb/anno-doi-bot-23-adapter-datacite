@@ -36,6 +36,12 @@ function dc_api_debug_dump () {
   case "${VAL//[$'\t \r\n']/}" in
     '{'*'}' ) DEST_FXT='json';;
   esac
+  case "$DEST_FXT" in
+    json )
+      for CONV in json-sort-pmb jq cat; do
+        which "$CONV" |& grep -qPe '^/' && break
+      done;;
+  esac
   echo "D: $KEY (${#VAL} bytes) -> $CONV -> $DEST_BFN.$DEST_FXT" >&2
   <<<"$VAL" $CONV >"$DEST_BFN.$DEST_FXT" || return $?
 }

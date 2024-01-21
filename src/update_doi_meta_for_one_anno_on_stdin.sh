@@ -2,11 +2,8 @@
 # -*- coding: utf-8, tab-width: 2 -*-
 
 
-function update_doi_meta_for_one_anno_on_stdin () {
-  local DC_META_JSON="$(dc_api_anno_to_doirequest)"
-  [ -n "$DC_META_JSON" ] || return 5$(
-    echo '-ERR Failed to convert anno to DataCite API format.' >&2)
-
+function update_doi_meta_for_one_dcmetajson () {
+  [ -n "$DC_META_JSON" ] || return 5$(echo '-ERR Empty DC_META_JSON.' >&2)
   local WANT_DOI='"doi":\s*"[^\s"]+"'
   WANT_DOI="$(<<<"$DC_META_JSON" grep -oPe "$WANT_DOI" | cut -sd $'\x22' -f 4)"
   case "$WANT_DOI" in
@@ -57,6 +54,27 @@ function update_doi_meta_for_one_anno_on_stdin () {
       echo "-ERR Unsupported DC API DOI state: '$VAL'" >&2
       return 5;;
   esac
+}
+
+
+function update_doi_meta_for_one_anno_on_stdin () {
+  local DC_META_JSON="$(dc_api_anno_to_doirequest)"
+  [ -n "$DC_META_JSON" ] || return 5$(
+    echo '-ERR Failed to convert anno to DataCite API format.' >&2)
+  local JSON_FILE='(anno on stdin)'
+  update_doi_meta_for_one_dcmetajson || return $?
+}
+
+
+function update_doi_meta_for_one_dcmetajson_from_command () {
+  local PRE= DC_META_JSON= RV=
+  [ "$#" -ge 1 ] || PRE='cat'
+  DC_META_JSON="$("$@")"; RV=$?
+  [ -n "$DC_META_JSON" ] || return 5$(echo >&2 \
+    '-ERR Failed to read DataCite API metadata from command:' \
+    "command failed with exit status $RV: $*")
+  local JSON_FILE='(external)'
+  update_doi_meta_for_one_dcmetajson || return $?
 }
 
 
