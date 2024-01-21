@@ -1,0 +1,73 @@
+{
+  "data": {
+    "type": "dois",
+    "attributes": {
+      "schemaVersion": "http://datacite.org/schema/kernel-4.4",
+      "url": "http://localhost:33321/anno/test-esau-spam-rsterr~1",
+      "version": 1,
+      "doi": "10.82109/anno.test.test-esau-spam-rsterr_1",
+      "dates": [
+        {
+          "dateType": "Created",
+          "date": "2023-06-22T16:01:01.000Z",
+          "dateInformation": null
+        },
+        {
+          "dateType": "Issued",
+          "date": "2023-06-22T16:01:01.000Z",
+          "dateInformation": null
+        },
+        {
+          "dateType": "Submitted",
+          "date": "2023-06-22T16:01:01.000Z",
+          "dateInformation": null
+        }
+      ],
+      "publicationYear": 2023,
+      "created": "2023-06-22T16:01:01.000Z",
+      "types": {
+        "resourceType": "Annotation",
+        "resourceTypeGeneral": "Other"
+      },
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifierType": "URL",
+          "alternateIdentifier": "http://localhost:33321/anno/test-esau-spam-rsterr~1"
+        }
+      ],
+      "creators": [
+        {
+          "name": "R. Sterr",
+          "nameType": "Personal",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "language": ":unav",
+      "subjects": [],
+      "relatedIdentifier": [
+        {
+          "resourceTypeGeneral": "Text",
+          "relationType": "Reviews",
+          "relatedIdentifierType": "URL",
+          "relatedIdentifier": "https://digi.ub.uni-heidelberg.de/diglit/cpg148/0074"
+        }
+      ],
+      "titles": [
+        {
+          "title": "Erster!!!1! 💯",
+          "lang": null
+        }
+      ],
+      "rightsList": [
+        {
+          "rights": "Creative Commons Zero v1.0 Universal",
+          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc0-1.0"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "data": {
+    "type": "dois",
+    "attributes": {
+      "schemaVersion": "http://datacite.org/schema/kernel-4.4",
+      "url": "http://localhost:33321/anno/doibot-datacite-test-240126~2",
+      "version": 2,
+      "doi": "10.82109/anno.test.doibot-datacite-test-240126_2",
+      "dates": [
+        {
+          "dateType": "Created",
+          "date": "2023-08-15T08:15:00.000Z",
+          "dateInformation": null
+        },
+        {
+          "dateType": "Issued",
+          "date": "2023-08-15T08:23:00.000Z",
+          "dateInformation": null
+        },
+        {
+          "dateType": "Submitted",
+          "date": "2023-08-15T08:23:00.000Z",
+          "dateInformation": null
+        },
+        {
+          "dateType": "Updated",
+          "date": "2023-08-15T08:23:00.000Z",
+          "dateInformation": null
+        }
+      ],
+      "updated": "2023-08-15T08:23:00.000Z",
+      "publicationYear": 2023,
+      "created": "2023-08-15T08:15:00.000Z",
+      "types": {
+        "resourceType": "Annotation",
+        "resourceTypeGeneral": "Other"
+      },
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifierType": "URL",
+          "alternateIdentifier": "http://localhost:33321/anno/doibot-datacite-test-240126~2"
+        }
+      ],
+      "creators": [
+        {
+          "name": "Josiah S. Carberry",
+          "nameType": "Personal",
+          "affiliation": [
+            {
+              "affiliationIdentifierScheme": "ROR",
+              "schemeUri": "https://ror.org/",
+              "affiliationIdentifier": "https://ror.org/05gq02987",
+              "name": "Brown University"
+            }
+          ],
+          "nameIdentifiers": [
+            {
+              "nameIdentifierScheme": "ORCID",
+              "schemeUri": "https://orcid.org/",
+              "nameIdentifier": "https://orcid.org/0000-0002-1825-0097"
+            }
+          ]
+        }
+      ],
+      "language": "de-DE",
+      "subjects": [
+        {
+          "subject": "Digital Object Identifier",
+          "schemeUri": "https://d-nb.info/gnd/",
+          "subjectScheme": "GND",
+          "classificationCode": "7694956-4"
+        },
+        {
+          "subject": "Ansetzungsform",
+          "schemeUri": "https://d-nb.info/gnd/",
+          "subjectScheme": "GND",
+          "classificationCode": "4328846-7"
+        }
+      ],
+      "relatedIdentifier": [
+        {
+          "resourceTypeGeneral": "Text",
+          "relationType": "Reviews",
+          "relatedIdentifierType": "URL",
+          "relatedIdentifier": "https://journals.ub.uni-heidelberg.de/index.php/arch-inf/article/view/69356"
+        },
+        {
+          "resourceTypeGeneral": "Text",
+          "relationType": "References",
+          "relatedIdentifierType": "URL",
+          "relatedIdentifier": "https://support.datacite.org/docs/api"
+        }
+      ],
+      "titles": [
+        {
+          "title": "DataCite DOI Bot Adapter Test",
+          "lang": null
+        }
+      ],
+      "rightsList": [
+        {
+          "rights": "Creative Commons Zero v1.0 Universal",
+          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc0-1.0"
+        }
+      ]
+    }
+  }
+}
