@@ -23,7 +23,11 @@
 
   "private": false, "license": "MIT",
 
-  "scripts": { "test": "elp && nodemjs test/all.mjs" },
+  "scripts": {
+    "adapter": "./adapter.sh",
+    "sh": "\"$@\"",
+    "test": "elp && nodemjs test/all.mjs"
+  },
   "directories": { "test": "test" },
   "eslintConfig": { "extends": "nodejs-pmb" },
 
