@@ -19,8 +19,12 @@ const EX = function fmtDateAttrs(popAnno, ctx) {
   attr.publicationYear = mustBePosInt('Year part of date of initial version',
     initialVersionDate.getFullYear());
   attr.created = isoOrNull(initialVersionDate);
-  // console.warn('D: fmtDateAttrs: initialVersionDate:', attr.created);
-  // console.warn('D: fmtDateAttrs: updated:', attr.updated);
+  if (ctx.debugLevel >= 4) {
+    console.warn('D: fmtDateAttrs:', {
+      created: String(attr.created),
+      updated: String(attr.updated),
+    });
+  }
 
   function addDate(k, v) {
     attr.dates.push({ dateType: k, date: v, dateInformation: null });
