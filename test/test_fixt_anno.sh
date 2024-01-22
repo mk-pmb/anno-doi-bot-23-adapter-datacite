@@ -12,6 +12,7 @@ function test_fixt_anno () {
 
   echo -n 'Lint: '; elp || return $?
 
+  local TEST_SKIPS=" ${CFG[doibot_test_skips]//[$'\t\r\n']/ } "
   local ERR_CNT=0 SXS_CNT=0
   test_fixt_anno__all_vers 'doibot-test-v'
   # test_fixt_anno__all_vers 'esau-rsterr_'
@@ -30,6 +31,11 @@ function find_json_prop () {
 
 
 function test_fixt_anno__all_vers () {
+  if [[ "$TEST_SKIPS" == *" fixt:$1 "* ]]; then
+    echo
+    echo W: $FUNCNAME: "skip as configured: $1" >&2
+    return 0
+  fi
   local FIXT_BFN_NOVERS="test/fixtures/$1"; shift
   local FIXT_FILE= ANNO_VER_NUM= CREA1=
   local MIN_VER_NUM= MAX_VER_NUM=
