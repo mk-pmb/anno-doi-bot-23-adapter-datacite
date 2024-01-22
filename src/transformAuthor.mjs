@@ -55,7 +55,7 @@ Object.assign(EX, {
         affiliationIdentifier: ws.url,
         name: ws.name,
       });
-      return;
+      return true;
     }
 
     const orcId = kisi.cutStrPrefix(ws.url, 'https://orcid.org/');
@@ -65,10 +65,11 @@ Object.assign(EX, {
         schemeUri: 'https://orcid.org/',
         nameIdentifier: ws.url,
       });
-      return;
+      return true;
     }
 
-    console.warn('W: Discarding uncategorized author website URL: ' + ws.url);
+    // console.warn('W: Discarding uncategorized author website: ' + ws.url);
+    return false;
   },
 
 
