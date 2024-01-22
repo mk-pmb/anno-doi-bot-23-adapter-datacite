@@ -33,12 +33,12 @@ function update_doi_meta_for_one_dcmetajson () {
       return 5;;
   esac
 
-  echo "D: publish: req"
+  echo "D: Set visibility to public:"
   dc_api_put_doi_interpret "$WANT_DOI" <<<'
     {"data":{"type":"dois","attributes":{"event":"publish"}}}
     ' || return $?
   VAL="${STATE[dc_result]}"
-  echo "D: publish: -> $VAL"
+  echo "D: New visibility: $VAL"
   case "$VAL" in
     '<urn:doi:'*'> public' )
       echo "+OK reg/upd ${VAL% *}"
