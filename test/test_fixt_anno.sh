@@ -30,12 +30,17 @@ function find_json_prop () {
 }
 
 
+function test_check_skip () {
+  [[ "$TEST_SKIPS" == *' ?checks? '* ]] \
+    && echo D: ${FUNCNAME[1]}: "check skip: $1" >&2
+  [[ "$TEST_SKIPS" == *" $1 "* ]] || return 1
+  echo W: ${FUNCNAME[1]}: "skip as configured: $1" >&2
+}
+
+
 function test_fixt_anno__all_vers () {
-  if [[ "$TEST_SKIPS" == *" fixt:$1 "* ]]; then
-    echo
-    echo W: $FUNCNAME: "skip as configured: $1" >&2
-    return 0
-  fi
+  echo
+  test_check_skip fixt:"$1" && return 0
   local FIXT_BFN_NOVERS="test/fixtures/$1"; shift
   local FIXT_FILE= ANNO_VER_NUM= CREA1=
   local MIN_VER_NUM= MAX_VER_NUM=
@@ -70,6 +75,8 @@ function test_fixt_anno__all_vers () {
 
 
 function test_fixt_anno__one_ver () {
+  local FIXT_SKIP_ID="$FIXT_BFN_NOVERS~$ANNO_VER_NUM"
+  test_check_skip fixt:"$FIXT_SKIP_ID" && return 0
   [ -n "$CREA1" ] || return 4$(
     echo E: $FUNCNAME: "Missing creation date of first anno version!" >&2)
   echo
@@ -121,17 +128,7 @@ function test_fixt_anno__one_ver () {
   esac
   ADAPT+=( ./adapter.sh )
 
-  local DCMETA="$RESULTS_BFN.anno2dc.json"
-  <<<"$FIXT_DATA" "${ADAPT[@]}" dc_api_anno_to_doirequest \
-    >"$DCMETA" || return $?
-  case "$VER_FX" in
-    lvr )
-      diff -sU 2 --label "$FIXT_VERS_BFN.dcmeta.json (modfied: LVR DOI/URL)" \
-        -- <(./test/dcmeta_latest_version_redirect.sed \
-        -- "$FIXT_VERS_BFN.dcmeta.json") "$DCMETA" || return $?;;
-    * ) diff -sU 2 -- "$FIXT_VERS_BFN.dcmeta.json" "$DCMETA" || return $?;;
-  esac
-  rm -- "$DCMETA"
+  test_fixt_anno__compare_dcmeta || return $?
 
   <<<"$FIXT_DATA" "${ADAPT[@]}" update_doi_meta_for_one_anno_on_stdin \
     |& tee -- "$RESULTS_BFN.log"
@@ -140,6 +137,46 @@ function test_fixt_anno__one_ver () {
 
   (( SXS_CNT += 1 ))
 }
+
+
+function test_fixt_anno__compare_dcmeta () {
+  local DCMETA_HAVE="$RESULTS_BFN.anno2dc.json"
+  <<<"$FIXT_DATA" "${ADAPT[@]}" dc_api_anno_to_doirequest \
+    >"$DCMETA_HAVE" || return $?
+
+  local CONV_PROG='cat'
+  local CONV_HINT=
+  case "$VER_FX" in
+    lvr )
+      CONV_PROG='./test/dcmeta_latest_version_redirect.sed'
+      CONV_HINT=' (modfied: LVR DOI/URL)'
+      ;;
+  esac
+
+  local DCMETA_FIXT="$FIXT_VERS_BFN.dcmeta.json"
+  local DCMETA_DIFF="$RESULTS_BFN.anno2dc.diff"
+  diff -U 2 --label "$DCMETA_FIXT$CONV_HINT" -- <(
+    $CONV_PROG -- "$DCMETA_FIXT") "$DCMETA_HAVE" >"$DCMETA_DIFF"
+  local DIFF_RV="$?"
+  if [ "$DIFF_RV" == 0 ]; then
+    [ -s "$DCMETA_DIFF" ] && return 7$(
+      echo E: $FUNCNAME: 'diff succeeded with unexpected output' >&2)
+    rm -- "$DCMETA_DIFF" "$DCMETA_HAVE"
+    return 0
+  fi
+
+  [ -s "$DCMETA_DIFF" ] || return 7$(
+    echo E: $FUNCNAME: 'diff failed without producing output' >&2)
+
+  test_check_skip fixt:dcmeta-diff:"$FIXT_SKIP_ID" && return 0
+  echo E: "Unexpected DC metadata JSON. See $DCMETA_DIFF" >&2
+  return 4
+}
+
+
+
+
+
 
 
 return 0
