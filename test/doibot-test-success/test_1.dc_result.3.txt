@@ -1,0 +1,1 @@
+<urn:doi:10.82109/anno.test.doibot-datacite-test_1> public

@@ -1,0 +1,7 @@
+--- dcmeta.works.json
++++ dcmeta.update_url.json
+@@ -99,3 +99,3 @@
+       },
+-      "url": "http://localhost:33321/anno/doibot-datacite-test~2",
++      "url": "http://localhost:33321/anno/doibot-datacite-test~2#update-1",
+       "version": 2

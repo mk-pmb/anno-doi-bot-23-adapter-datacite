@@ -1,0 +1,159 @@
+{
+  "data": {
+    "attributes": {
+      "alternateIdentifiers": [],
+      "citationCount": 0,
+      "citationsOverTime": [],
+      "container": {},
+      "contentUrl": null,
+      "contributors": [],
+      "created": "2024-01-08T08:44:02.000Z",
+      "creators": [
+        {
+          "affiliation": [
+            "Brown University"
+          ],
+          "name": "Josiah S. Carberry",
+          "nameIdentifiers": [
+            {
+              "nameIdentifier": "https://orcid.org/0000-0002-1825-0097",
+              "nameIdentifierScheme": "ORCID",
+              "schemeUri": "https://orcid.org/"
+            }
+          ],
+          "nameType": "Personal"
+        }
+      ],
+      "dates": [
+        {
+          "date": "2023-08-15T08:15:00.000Z",
+          "dateInformation": null,
+          "dateType": "Created"
+        },
+        {
+          "date": "2023-08-15T08:15:00.000Z",
+          "dateInformation": null,
+          "dateType": "Issued"
+        },
+        {
+          "date": "2023-08-15T08:15:00.000Z",
+          "dateInformation": null,
+          "dateType": "Submitted"
+        }
+      ],
+      "descriptions": [],
+      "doi": "10.82109/anno.test.doibot-datacite-test_1",
+      "downloadCount": 0,
+      "downloadsOverTime": [],
+      "formats": [],
+      "fundingReferences": [],
+      "geoLocations": [],
+      "identifiers": [],
+      "isActive": true,
+      "landingPage": null,
+      "language": "de",
+      "metadataVersion": 2,
+      "partCount": 0,
+      "partOfCount": 0,
+      "prefix": "10.82109",
+      "publicationYear": 2023,
+      "published": "2023",
+      "publisher": null,
+      "reason": null,
+      "referenceCount": 0,
+      "registered": "2024-01-11T19:43:27.000Z",
+      "relatedIdentifiers": [],
+      "relatedItems": [],
+      "rightsList": [
+        {
+          "rights": "Creative Commons Zero v1.0 Universal",
+          "rightsIdentifier": "cc0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/"
+        }
+      ],
+      "schemaVersion": "http://datacite.org/schema/kernel-4.4",
+      "sizes": [],
+      "source": "api",
+      "state": "findable",
+      "subjects": [
+        {
+          "classificationCode": "7694956-4",
+          "schemeUri": "https://d-nb.info/gnd/",
+          "subject": "Digital Object Identifier",
+          "subjectScheme": "GND"
+        },
+        {
+          "classificationCode": "4328846-7",
+          "schemeUri": "https://d-nb.info/gnd/",
+          "subject": "Ansetzungsform",
+          "subjectScheme": "GND"
+        }
+      ],
+      "suffix": "anno.test.doibot-datacite-test_1",
+      "titles": [
+        {
+          "lang": null,
+          "title": "DataCite DOI Brot Adapter Test"
+        }
+      ],
+      "types": {
+        "bibtex": "misc",
+        "citeproc": "article",
+        "resourceType": "Annotation",
+        "resourceTypeGeneral": "Other",
+        "ris": "GEN",
+        "schemaOrg": "CreativeWork"
+      },
+      "updated": "2024-01-22T04:33:30.000Z",
+      "url": "http://localhost:33321/anno/doibot-datacite-test~1",
+      "version": "1",
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "viewCount": 0,
+      "viewsOverTime": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuODIxMDkvQU5OTy5URVNULkRPSUJPVC1EQVRBQ0lURS1URVNUXzE8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkpvc2lhaCBTLiBDYXJiZXJyeTwvY3JlYXRvck5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iaHR0cHM6Ly9vcmNpZC5vcmcvIj5odHRwczovL29yY2lkLm9yZy8wMDAwLTAwMDItMTgyNS0wMDk3PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzA1Z3EwMjk4NyIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiIHNjaGVtZVVSST0iaHR0cHM6Ly9yb3Iub3JnLyI+QnJvd24gVW5pdmVyc2l0eTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRhdGFDaXRlIERPSSBCcm90IEFkYXB0ZXIgVGVzdDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlci8+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDIzPC9wdWJsaWNhdGlvblllYXI+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJPdGhlciI+QW5ub3RhdGlvbjwvcmVzb3VyY2VUeXBlPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkdORCIgc2NoZW1lVVJJPSJodHRwczovL2QtbmIuaW5mby9nbmQvIiBjbGFzc2lmaWNhdGlvbkNvZGU9Ijc2OTQ5NTYtNCI+RGlnaXRhbCBPYmplY3QgSWRlbnRpZmllcjwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkdORCIgc2NoZW1lVVJJPSJodHRwczovL2QtbmIuaW5mby9nbmQvIiBjbGFzc2lmaWNhdGlvbkNvZGU9IjQzMjg4NDYtNyI+QW5zZXR6dW5nc2Zvcm08L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQ3JlYXRlZCI+MjAyMy0wOC0xNVQwODoxNTowMC4wMDBaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAyMy0wOC0xNVQwODoxNTowMC4wMDBaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCI+MjAyMy0wOC0xNVQwODoxNTowMC4wMDBaPC9kYXRlPgogIDwvZGF0ZXM+CiAgPGxhbmd1YWdlPmRlLURFPC9sYW5ndWFnZT4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0iVVJMIj5odHRwOi8vbG9jYWxob3N0OjMzMzIxL2Fubm8vZG9pYm90LWRhdGFjaXRlLXRlc3R+MTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxzaXplcy8+CiAgPGZvcm1hdHMvPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL3B1YmxpY2RvbWFpbi96ZXJvLzEuMC8iIHJpZ2h0c0lkZW50aWZpZXI9ImNjMC0xLjAiIHJpZ2h0c0lkZW50aWZpZXJTY2hlbWU9IlNQRFgiIHNjaGVtZVVSST0iaHR0cHM6Ly9zcGR4Lm9yZy9saWNlbnNlcy8iPkNyZWF0aXZlIENvbW1vbnMgWmVybyB2MS4wIFVuaXZlcnNhbDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KPC9yZXNvdXJjZT4K"
+    },
+    "id": "10.82109/anno.test.doibot-datacite-test_1",
+    "relationships": {
+      "citations": {
+        "data": []
+      },
+      "client": {
+        "data": {
+          "id": "xltc.ihuvpk",
+          "type": "clients"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.82109/anno.test.doibot-datacite-test_1",
+          "type": "media"
+        }
+      },
+      "partOf": {
+        "data": []
+      },
+      "parts": {
+        "data": []
+      },
+      "provider": {
+        "data": {
+          "id": "xltc",
+          "type": "providers"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      }
+    },
+    "type": "dois"
+  }
+}

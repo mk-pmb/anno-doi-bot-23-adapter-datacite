@@ -1,0 +1,105 @@
+{
+  "data": {
+    "attributes": {
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifier": "http://localhost:33321/anno/doibot-datacite-test~1",
+          "alternateIdentifierType": "URL"
+        }
+      ],
+      "created": "2023-08-15T08:15:00.000Z",
+      "creators": [
+        {
+          "affiliation": [
+            {
+              "affiliationIdentifier": "https://ror.org/05gq02987",
+              "affiliationIdentifierScheme": "ROR",
+              "name": "Brown University",
+              "schemeUri": "https://ror.org/"
+            }
+          ],
+          "name": "Josiah S. Carberry",
+          "nameIdentifiers": [
+            {
+              "nameIdentifier": "https://orcid.org/0000-0002-1825-0097",
+              "nameIdentifierScheme": "ORCID",
+              "schemeUri": "https://orcid.org/"
+            }
+          ],
+          "nameType": "Personal"
+        }
+      ],
+      "dates": [
+        {
+          "date": "2023-08-15T08:15:00.000Z",
+          "dateInformation": null,
+          "dateType": "Created"
+        },
+        {
+          "date": "2023-08-15T08:15:00.000Z",
+          "dateInformation": null,
+          "dateType": "Issued"
+        },
+        {
+          "date": "2023-08-15T08:15:00.000Z",
+          "dateInformation": null,
+          "dateType": "Submitted"
+        }
+      ],
+      "doi": "10.82109/anno.test.doibot-datacite-test_1",
+      "language": "de-DE",
+      "publicationYear": 2023,
+      "relatedIdentifier": [
+        {
+          "relatedIdentifier": "https://journals.ub.uni-heidelberg.de/index.php/arch-inf/article/view/69356",
+          "relatedIdentifierType": "URL",
+          "relationType": "Reviews",
+          "resourceTypeGeneral": "Text"
+        },
+        {
+          "relatedIdentifier": "https://support.datacite.org/docs/api",
+          "relatedIdentifierType": "URL",
+          "relationType": "References",
+          "resourceTypeGeneral": "Text"
+        }
+      ],
+      "rightsList": [
+        {
+          "rights": "Creative Commons Zero v1.0 Universal",
+          "rightsIdentifier": "cc0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "schemeUri": "https://spdx.org/licenses/"
+        }
+      ],
+      "schemaVersion": "http://datacite.org/schema/kernel-4.4",
+      "subjects": [
+        {
+          "classificationCode": "7694956-4",
+          "schemeUri": "https://d-nb.info/gnd/",
+          "subject": "Digital Object Identifier",
+          "subjectScheme": "GND"
+        },
+        {
+          "classificationCode": "4328846-7",
+          "schemeUri": "https://d-nb.info/gnd/",
+          "subject": "Ansetzungsform",
+          "subjectScheme": "GND"
+        }
+      ],
+      "titles": [
+        {
+          "lang": null,
+          "title": "DataCite DOI Brot Adapter Test"
+        }
+      ],
+      "types": {
+        "resourceType": "Annotation",
+        "resourceTypeGeneral": "Other"
+      },
+      "url": "http://localhost:33321/anno/doibot-datacite-test~1",
+      "version": 1
+    },
+    "type": "dois"
+  }
+}
