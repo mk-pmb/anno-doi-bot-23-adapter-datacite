@@ -1,0 +1,79 @@
+{
+  "data": {
+    "attributes": {
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifier": "http://localhost:33321/anno/test-esau-spam-rsterr~3",
+          "alternateIdentifierType": "URL"
+        }
+      ],
+      "created": "2023-06-22T16:01:01.000Z",
+      "creators": [
+        {
+          "affiliation": [],
+          "name": "R. Sterr",
+          "nameIdentifiers": [],
+          "nameType": "Personal"
+        }
+      ],
+      "dates": [
+        {
+          "date": "2023-06-22T16:01:01.000Z",
+          "dateInformation": null,
+          "dateType": "Created"
+        },
+        {
+          "date": "2023-06-22T17:01:10.000Z",
+          "dateInformation": null,
+          "dateType": "Issued"
+        },
+        {
+          "date": "2023-06-22T17:01:10.000Z",
+          "dateInformation": null,
+          "dateType": "Submitted"
+        },
+        {
+          "date": "2023-06-22T17:01:10.000Z",
+          "dateInformation": null,
+          "dateType": "Updated"
+        }
+      ],
+      "doi": "10.82109/anno.test.test-esau-spam-rsterr",
+      "language": "de-DE",
+      "publicationYear": 2023,
+      "relatedIdentifier": [
+        {
+          "relatedIdentifier": "https://digi.ub.uni-heidelberg.de/diglit/cpg148/0074",
+          "relatedIdentifierType": "URL",
+          "relationType": "Reviews",
+          "resourceTypeGeneral": "Text"
+        }
+      ],
+      "rightsList": [
+        {
+          "rights": "Creative Commons Zero v1.0 Universal",
+          "rightsIdentifier": "cc0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "schemeUri": "https://spdx.org/licenses/"
+        }
+      ],
+      "schemaVersion": "http://datacite.org/schema/kernel-4.4",
+      "subjects": [],
+      "titles": [
+        {
+          "lang": null,
+          "title": "Erster!!!1! \ud83d\udcaf"
+        }
+      ],
+      "types": {
+        "resourceType": "Annotation",
+        "resourceTypeGeneral": "Other"
+      },
+      "updated": "2023-06-22T17:01:10.000Z",
+      "url": "http://localhost:33321/anno/test-esau-spam-rsterr",
+      "version": 3
+    },
+    "type": "dois"
+  }
+}

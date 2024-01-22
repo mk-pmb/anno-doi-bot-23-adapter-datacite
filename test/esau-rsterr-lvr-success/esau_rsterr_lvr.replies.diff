@@ -1,0 +1,30 @@
+--- esau_rsterr_lvr.draft.reply.json
++++ esau_rsterr_lvr.publish.reply.json
+@@ -57,5 +57,5 @@
+         }
+       ],
+-      "isActive": false,
++      "isActive": true,
+       "landingPage": null,
+       "language": "de",
+@@ -69,5 +69,5 @@
+       "reason": null,
+       "referenceCount": 0,
+-      "registered": null,
++      "registered": "2024-01-22T02:05:35.000Z",
+       "relatedIdentifiers": [],
+       "relatedItems": [],
+@@ -84,5 +84,5 @@
+       "sizes": [],
+       "source": "api",
+-      "state": "draft",
++      "state": "findable",
+       "subjects": [],
+       "suffix": "anno.test.test-esau-spam-rsterr",
+@@ -101,5 +101,5 @@
+         "schemaOrg": "CreativeWork"
+       },
+-      "updated": "2024-01-22T02:05:34.000Z",
++      "updated": "2024-01-22T02:05:35.000Z",
+       "url": "http://localhost:33321/anno/test-esau-spam-rsterr",
+       "version": "3",

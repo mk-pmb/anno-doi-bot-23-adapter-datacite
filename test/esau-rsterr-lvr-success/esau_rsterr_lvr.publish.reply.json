@@ -1,0 +1,153 @@
+{
+  "data": {
+    "attributes": {
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifier": "http://localhost:33321/anno/test-esau-spam-rsterr~3",
+          "alternateIdentifierType": "URL"
+        }
+      ],
+      "citationCount": 0,
+      "citationsOverTime": [],
+      "container": {},
+      "contentUrl": null,
+      "contributors": [],
+      "created": "2024-01-22T02:05:34.000Z",
+      "creators": [
+        {
+          "affiliation": [],
+          "name": "R. Sterr",
+          "nameIdentifiers": [],
+          "nameType": "Personal"
+        }
+      ],
+      "dates": [
+        {
+          "date": "2023-06-22T16:01:01.000Z",
+          "dateInformation": null,
+          "dateType": "Created"
+        },
+        {
+          "date": "2023-06-22T17:01:10.000Z",
+          "dateInformation": null,
+          "dateType": "Issued"
+        },
+        {
+          "date": "2023-06-22T17:01:10.000Z",
+          "dateInformation": null,
+          "dateType": "Submitted"
+        },
+        {
+          "date": "2023-06-22T17:01:10.000Z",
+          "dateInformation": null,
+          "dateType": "Updated"
+        }
+      ],
+      "descriptions": [],
+      "doi": "10.82109/anno.test.test-esau-spam-rsterr",
+      "downloadCount": 0,
+      "downloadsOverTime": [],
+      "formats": [],
+      "fundingReferences": [],
+      "geoLocations": [],
+      "identifiers": [
+        {
+          "identifier": "http://localhost:33321/anno/test-esau-spam-rsterr~3",
+          "identifierType": "URL"
+        }
+      ],
+      "isActive": true,
+      "landingPage": null,
+      "language": "de",
+      "metadataVersion": 0,
+      "partCount": 0,
+      "partOfCount": 0,
+      "prefix": "10.82109",
+      "publicationYear": 2023,
+      "published": "2023",
+      "publisher": null,
+      "reason": null,
+      "referenceCount": 0,
+      "registered": "2024-01-22T02:05:35.000Z",
+      "relatedIdentifiers": [],
+      "relatedItems": [],
+      "rightsList": [
+        {
+          "rights": "Creative Commons Zero v1.0 Universal",
+          "rightsIdentifier": "cc0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/"
+        }
+      ],
+      "schemaVersion": "http://datacite.org/schema/kernel-4.4",
+      "sizes": [],
+      "source": "api",
+      "state": "findable",
+      "subjects": [],
+      "suffix": "anno.test.test-esau-spam-rsterr",
+      "titles": [
+        {
+          "lang": null,
+          "title": "Erster!!!1! \ud83d\udcaf"
+        }
+      ],
+      "types": {
+        "bibtex": "misc",
+        "citeproc": "article",
+        "resourceType": "Annotation",
+        "resourceTypeGeneral": "Other",
+        "ris": "GEN",
+        "schemaOrg": "CreativeWork"
+      },
+      "updated": "2024-01-22T02:05:35.000Z",
+      "url": "http://localhost:33321/anno/test-esau-spam-rsterr",
+      "version": "3",
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "viewCount": 0,
+      "viewsOverTime": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuODIxMDkvQU5OTy5URVNULlRFU1QtRVNBVS1TUEFNLVJTVEVSUjwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+Ui4gU3RlcnI8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5FcnN0ZXIhISExISDwn5KvPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyLz4KICA8cHVibGljYXRpb25ZZWFyPjIwMjM8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9Ik90aGVyIj5Bbm5vdGF0aW9uPC9yZXNvdXJjZVR5cGU+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IkNyZWF0ZWQiPjIwMjMtMDYtMjJUMTY6MDE6MDEuMDAwWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMjMtMDYtMjJUMTc6MDE6MTAuMDAwWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiPjIwMjMtMDYtMjJUMTc6MDE6MTAuMDAwWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIj4yMDIzLTA2LTIyVDE3OjAxOjEwLjAwMFo8L2RhdGU+CiAgPC9kYXRlcz4KICA8bGFuZ3VhZ2U+ZGUtREU8L2xhbmd1YWdlPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJVUkwiPmh0dHA6Ly9sb2NhbGhvc3Q6MzMzMjEvYW5uby90ZXN0LWVzYXUtc3BhbS1yc3RlcnJ+MzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxzaXplcy8+CiAgPGZvcm1hdHMvPgogIDx2ZXJzaW9uPjM8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL3B1YmxpY2RvbWFpbi96ZXJvLzEuMC8iIHJpZ2h0c0lkZW50aWZpZXI9ImNjMC0xLjAiIHJpZ2h0c0lkZW50aWZpZXJTY2hlbWU9IlNQRFgiIHNjaGVtZVVSST0iaHR0cHM6Ly9zcGR4Lm9yZy9saWNlbnNlcy8iPkNyZWF0aXZlIENvbW1vbnMgWmVybyB2MS4wIFVuaXZlcnNhbDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KPC9yZXNvdXJjZT4K"
+    },
+    "id": "10.82109/anno.test.test-esau-spam-rsterr",
+    "relationships": {
+      "citations": {
+        "data": []
+      },
+      "client": {
+        "data": {
+          "id": "xltc.ihuvpk",
+          "type": "clients"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.82109/anno.test.test-esau-spam-rsterr",
+          "type": "media"
+        }
+      },
+      "partOf": {
+        "data": []
+      },
+      "parts": {
+        "data": []
+      },
+      "provider": {
+        "data": {
+          "id": "xltc",
+          "type": "providers"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      }
+    },
+    "type": "dois"
+  }
+}
