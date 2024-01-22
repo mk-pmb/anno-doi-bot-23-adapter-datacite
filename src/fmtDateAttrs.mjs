@@ -5,7 +5,11 @@ import mustBe from 'typechecks-pmb/must-be.js';
 
 const mustBePosInt = mustBe('pos int');
 
-function isoOrNull(d) { return (d.getTime() ? d.toISOString() : null); }
+function isoOrNull(d) { return (d.getTime() ? d.toISOString() : null); } /*
+  2024-01-22: I tried to `.replace(/\.0+(?=Z$)/, '')`
+    (to stop pretending exaggerated timestamp precision) but DataCite
+    seemed to not like it. (The dreaded "metadata invalid" error.)
+*/
 
 const EX = function fmtDateAttrs(popAnno, ctx) {
   const attr = { dates: [] };
