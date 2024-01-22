@@ -34,6 +34,7 @@ const EX = {
     const cfg = {
       expectedDoi: libDoi.expectBareDoi(mustEnv.nest('anno_doi_expect')),
       initialVersionDate: mustEnv.nest('anno_initial_version_date'),
+      customUrl: mustEnv('str', 'anno_custom_url', ''),
     };
     console.log(JSON.stringify(EX.convert(cfg, anno), null, 2));
   },
@@ -42,6 +43,7 @@ const EX = {
   convert(cfg, anno) {
     const popAnno = objPop(anno, { mustBe }).mustBe;
     const annoIdUrl = popAnno.nest('id');
+    const latestVerUrl = popAnno.nest('dc:isVersionOf');
     const { versNum } = EX.parseVersId(annoIdUrl);
     const prevReviUrl = popAnno('nonEmpty str | undef', 'dc:replaces');
     const hasPreviousVersion = Boolean(prevReviUrl);
@@ -53,7 +55,7 @@ const EX = {
 
     const attr = {
       schemaVersion: 'http://datacite.org/schema/kernel-4.4',
-      url: annoIdUrl,
+      url: cfg.customUrl || annoIdUrl,
       version: versNum,
       doi: cfg.expectedDoi,
       ...fmtDateAttrs(popAnno, { ...cfg, hasPreviousVersion }),
@@ -62,6 +64,7 @@ const EX = {
         resourceTypeGeneral: 'Other',
       },
     };
+    if (attr.url === 'anno-fx:latest') { attr.url = latestVerUrl; }
 
     (function altIds() {
       const a = 'alternateIdentifier';
