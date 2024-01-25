@@ -9,6 +9,10 @@ DataCite adapter for anno-doi-bot-23.
 <!--/#echo -->
 
 
+* [DataCite metadata schema kernel 4.5
+  ](https://schema.datacite.org/meta/kernel-4.5/)
+
+
 
 Usage
 -----
