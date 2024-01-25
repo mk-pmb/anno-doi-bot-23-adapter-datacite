@@ -19,11 +19,12 @@ function dc_api_curl () {
     --silent
     --request "$VERB"
     --header 'Content-Type: application/vnd.api+json'
+    "$@"
     )
-  [ -z "${CFG[datacite_repo_user]}" ] || OPT+=(
-    --user "${CFG[datacite_repo_user]}:${CFG[datacite_repo_pswd]}" )
   local FULL_URL="${CFG[datacite_api_server]}$SUB_URL"
-  curl "${OPT[@]}" "$@" -- "$FULL_URL" || return $?
+  [ "$DBGLV" -lt 4 ] || echo D: curl "--user '***:***'$(
+    printf -- ' %q' "${OPT[@]}" -- "$FULL_URL")" >&2
+  curl --user "$DC_USER" "${OPT[@]}" -- "$FULL_URL" || return $?
 }
 
 
@@ -47,6 +48,7 @@ function dc_api_debug_dump () {
         which "$CONV" |& grep -qPe '^/' && break
       done;;
   esac
+
   echo "D: $KEY (${#VAL} bytes) -> $CONV -> $DEST_BFN.$DEST_FXT" >&2
   <<<"$VAL" $CONV >"$DEST_BFN.$DEST_FXT" || return $?
 }
