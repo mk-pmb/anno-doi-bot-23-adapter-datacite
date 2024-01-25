@@ -10,6 +10,11 @@ function dc_api_anno_to_doirequest () {
 function dc_api_curl () {
   local VERB="$1"; shift
   local SUB_URL="$1"; shift
+  local DC_USER="${CFG[datacite_repo_user]}:${CFG[datacite_repo_pswd]}"
+  case "$DC_USER" in
+    :* ) echo E: $FUNCNAME: 'Empty datacite_repo_user!' >&2; return 4;;
+    *: ) echo E: $FUNCNAME: 'Empty datacite_repo_pswd!' >&2; return 4;;
+  esac
   local OPT=(
     --silent
     --request "$VERB"
