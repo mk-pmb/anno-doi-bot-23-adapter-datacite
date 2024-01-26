@@ -7,4 +7,8 @@ CFG[datacite_repo_user]='DATACITE.USERNAME'
 # .rc file for just the password line, and git-ignore that.
 CFG[datacite_repo_pswd]='DataCitePlainTextPasswordHere'
 
+
+
+# If you want to run the DOI bot in docker, keep this line:
 eval "$DOCKER_DOIBOT_CFG_DATACITE_OVERRIDES"
+# If you use multiple config files, the docker eval line should run last.
