@@ -56,12 +56,19 @@ function dc_api_debug_dump () {
 
 function dc_api_put_doi_interpret () {
   local WANT_DOI="$1"; shift
+  local META_JSON= VAL=
+  for VAL in "$@"; do
+    META_JSON+=',"'"${VAL/:/'":"'}"'"'
+  done
+  [ -z "$META_JSON" ] || exec <<<'{"data":{"type":"dois","attributes":'$(
+    )'{"doi":"'"$WANT_DOI"'"'"$META_JSON}}}"
+
   local RV=
+  STATE[dc_visibility]=
   STATE[dc_result]=
   STATE[dc_reply]="$(dc_api_curl PUT dois/"$WANT_DOI" --data '@-')"; RV=$?
   [ "$DBGLV" -lt 4 ] || dc_api_debug_dump dc_reply || return $?
   [ "$RV" == 0 ] || return 4$(echo "E: API request error, rv=$RV" >&2)
-
   case "${STATE[dc_reply]//[$'\r\n \t']/}" in
     '{'*'}' ) ;;
     * )
@@ -70,10 +77,23 @@ function dc_api_put_doi_interpret () {
       return 4;;
   esac
 
-  STATE[dc_result]="$(<<<"${STATE[dc_reply]}" \
-    runmjs_file "$DBA_PATH"/src/interpretDcDoiPutResult.mjs
-    )" || return 4$(echo "E: Failed to interpret API result, rv=$RV" >&2)
-  [ "$DBGLV" -lt 4 ] || dc_api_debug_dump dc_result || return $?
+  VAL="$(<<<"${STATE[dc_reply]}" runmjs_file \
+    "$DBA_PATH"/src/interpretDcDoiPutResult.mjs)"
+  # [ "$DBGLV" -lt 4 ] || echo D: "API result: '$VAL'"
+  case "$VAL" in
+    "<urn:doi:$WANT_DOI> "* ) VAL="${VAL#*> }";;
+    '<urn:doi:'*'> '* )
+      echo E: 'Received API result for a wrong DOI.' >&2
+      return 4;;
+    * )
+      echo E: 'Failed to interpret API result.' >&2
+      return 4;;
+  esac
+
+  case "$VAL" in
+    draft | public | hidden ) STATE[dc_visibility]="$VAL";;
+    * ) echo E: 'Failed to detect visibility.' >&2; return 4;;
+  esac
 }
 
 

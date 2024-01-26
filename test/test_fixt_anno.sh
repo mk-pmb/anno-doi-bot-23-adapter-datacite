@@ -120,6 +120,7 @@ function test_fixt_anno__one_ver () {
     env
     anno_initial_version_date="$CREA1"
     anno_doi_expect="$REG_DOI"
+    anno_doi_targeturl="$anno_baseurl$ANNO_VERS_ID"
     anno_ver_num="$ANNO_VER_NUM"
     anno_ver_fx="$VER_FX"
     )
