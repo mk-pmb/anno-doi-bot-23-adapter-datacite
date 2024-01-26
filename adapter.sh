@@ -14,6 +14,7 @@ function cli_main () {
   source -- "$BOT_FUNCD"/bot_init.sh || return $?
   source_these_libs "$BOT_FUNCD"/*.sh || return $?
   source_these_libs "$DBA_PATH"/src/*.sh || return $?
+  bot_init_before_config || return $?
   source_in_func "$BOT_FUNCD"/cfg.default.rc || return $?
   source_in_func "$DBA_PATH"/src/cfg.default.rc || return $?
   load_host_config datacite || return $?
