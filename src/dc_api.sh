@@ -45,10 +45,7 @@ function dc_api_debug_dump () {
     '{'*'}' ) DEST_FXT='json';;
   esac
   case "$DEST_FXT" in
-    json )
-      for CONV in json-sort-pmb jq cat; do
-        which "$CONV" |& grep -qPe '^/' && break
-      done;;
+    json ) CONV="${CFG[json_prettify_prog]}";;
   esac
 
   echo "D: $KEY (${#VAL} bytes) -> $CONV -> $DEST_BFN.$DEST_FXT" >&2
