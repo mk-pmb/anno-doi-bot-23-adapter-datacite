@@ -9,6 +9,8 @@ function dc_api_anno_to_doirequest () {
 
 function dc_api_curl () {
   local VERB="$1"; shift
+  [ "$VERB" == "${VERB^^}" ] || echo W: $FUNCNAME: >&2 \
+    'The DataCite API probably expects the HTTP verb to be all uppercase.'
   local SUB_URL="$1"; shift
   local DC_USER="${CFG[datacite_repo_user]}:${CFG[datacite_repo_pswd]}"
   case "$DC_USER" in
