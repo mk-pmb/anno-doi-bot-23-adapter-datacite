@@ -18,7 +18,8 @@ function cli_main () {
   source_in_func "$BOT_FUNCD"/cfg.default.rc || return $?
   source_in_func "$DBA_PATH"/src/cfg.default.rc || return $?
   load_host_config datacite || return $?
-  "${CFG[task]}" "$@" || return $?
+  "${CFG[task]}" "$@" || return $?$(echo E: "Adapter task failed (rv=$?):$(
+    printf ' ‹%s›' "${CFG[task]}" "$@")" >&2)
 }
 
 
