@@ -52,9 +52,12 @@ Configuration
 Usage
 -----
 
-This adapter is not meant to be used directly.
+In production, this adapter is not meant to be used directly.
 Instead, it should be invoked by your DOI bot.
 
+For debugging, however, there are some useful invocations:
+
+* [`download_meta_for_dois`](src/download_meta_for_dois.sh)
 
 
 
