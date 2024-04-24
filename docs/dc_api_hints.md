@@ -3,6 +3,14 @@ Hints for using the DataCite API
 ================================
 
 
+Mass-querying lots of DOIs by prefix
+------------------------------------
+
+Just adjust the `page[size]` parameter:
+https://api.datacite.org/dois?page[number]=1&page[size]=25&query=id:10.11588/anno.*
+
+
+
 API error: Invalid metadata
 ---------------------------
 
