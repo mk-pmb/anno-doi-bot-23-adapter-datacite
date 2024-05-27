@@ -1,5 +1,5 @@
 { "name": "anno-doi-bot-23-adapter-datacite",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DataCite adapter for anno-doi-bot-23.",
   "keywords": [
     "annotation",
@@ -9,13 +9,13 @@
   ],
 
   "author": "Heidelberg University Library (https://www.ub.uni-heidelberg.de/)",
-  "homepage": "https://github.com/mk-pmb/anno-doi-bot-23-adapter-datacite/#readme",
+  "homepage": "https://github.com/UB-Heidelberg/anno-doi-bot-23-adapter-datacite/#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mk-pmb/anno-doi-bot-23-adapter-datacite.git"
+    "url": "git+https://github.com/UB-Heidelberg/anno-doi-bot-23-adapter-datacite.git"
   },
   "bugs": {
-    "url": "https://github.com/mk-pmb/anno-doi-bot-23-adapter-datacite/issues"
+    "url": "https://github.com/UB-Heidelberg/anno-doi-bot-23-adapter-datacite/issues"
   },
   "contributors": [
     "M.K. (https://github.com/mk-pmb)"
