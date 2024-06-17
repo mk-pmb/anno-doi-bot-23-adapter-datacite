@@ -1,0 +1,73 @@
+[
+{ "@context": "http://www.w3.org/ns/anno.jsonld",
+  "type": ["Annotation"],
+  "id": "212d7693319d4~1",
+  "created": "2016-03-01T15:09:15Z",
+  "dc:dateAccepted": false,
+  "dc:title": "Vergleich",
+  "body": {
+    "type": "SpecificResource",
+    "purpose": "linking",
+    "rdf:predicate": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "dc:title": "Vergleichbare Abbildung von Adam und Eva",
+    "source": "http://media.kunst-fuer-alle.de/img/41/m/41_00607696.jpg"
+  },
+  "creator": {
+    "id": "urn:uuid:55e3114a-6db0-4583-8d66-e48f9987f88c",
+    "name": "Nino Nanobashvili",
+    "type": "Person"
+  },
+  "dc:language": "de-DE",
+  "rights": "https://creativecommons.org/licenses/by/4.0/",
+  "target": {
+    "scope": "https://digi.ub.uni-heidelberg.de/diglit/annotationen_test/0006",
+    "selector": {
+      "type": "SvgSelector",
+      "value": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\"\n  width=\"1161\">\n  <rect x=\"337.37294117633405\" y=\"177.56470588283102\" width=\"281.3717647053361\" height=\"412.49647058816697\" />\n</svg>"
+    },
+    "source": "https://digi.ub.uni-heidelberg.de/diglitData/image/annotationen_test/4/006_cpg148_033v.jpg"
+  }
+},
+{ "@context": "http://www.w3.org/ns/anno.jsonld",
+  "type": ["Annotation"],
+  "id": "b4ddd7677eef6~1",
+  "created": "2017-11-27T11:58:09Z",
+  "dc:dateAccepted": false,
+  "dc:title": "Ultraviolett-Aufnahme",
+  "body": {
+    "type": "SpecificResource",
+    "purpose": "linking",
+    "rdf:predicate": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "dc:title": "Ultraviolett-Aufnahme in heidICON",
+    "source": "http://heidicon.ub.uni-heidelberg.de/id/510355"
+  },
+  "creator": {
+    "id": "urn:uuid:3daaffd2-95c2-4df0-ad87-0c5cce6debaf",
+    "name": "Jakub \u0160imek",
+    "type": "Person"
+  },
+  "dc:language": "de-DE",
+  "rights": "https://creativecommons.org/licenses/by/4.0",
+  "target": "https://digi.ub.uni-heidelberg.de/diglit/annotationen_test/0003"
+},
+{ "@context": "http://www.w3.org/ns/anno.jsonld",
+  "type": ["Annotation"],
+  "id": "BNgAWVT6Tlm034vtaHNl-Q~1",
+  "created": "2017-11-24T12:47:33Z",
+  "dc:dateAccepted": false,
+  "dc:title": "z",
+  "body": [
+    { "format": "text/html",
+      "type": "TextualBody",
+      "value": "<p>Z-Achse</p>"
+    }
+  ],
+  "creator": {
+    "id": "urn:uuid:7bd899de-c8aa-4a07-a898-31be537a3d3c",
+    "name": "kBa.",
+    "type": "Person"
+  },
+  "dc:language": "de-DE",
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "target": "https://digi.ub.uni-heidelberg.de/diglit/annotationen_test/0002"
+}]
