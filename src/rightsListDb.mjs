@@ -9,6 +9,13 @@ const EX = Object.assign([
     rightsIdentifier: 'cc0-1.0',
   },
 
+  { rights: 'Creative Commons Attribution 4.0 International',
+    rightsUri: 'https://creativecommons.org/licenses/by/4.0/',
+    rightsIdentifierScheme: 'SPDX',
+    schemeUri: 'https://spdx.org/licenses/',
+    rightsIdentifier: 'cc-by-4.0',
+  },
+
 
 ], {
 
