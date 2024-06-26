@@ -5,6 +5,8 @@
 /botfuncs
 # ^-- symlink to the "funcs" directory of your DOI bot installation.
 
+/config
+
 
 
 # Auto-generated files:
