@@ -3,7 +3,7 @@
   "type": ["Annotation"],
   "id": "212d7693319d4~1",
   "created": "2016-03-01T15:09:15Z",
-  "dc:dateAccepted": false,
+  "dcterms:dateAccepted": false,
   "dc:title": "Vergleich",
   "body": {
     "type": "SpecificResource",
@@ -32,7 +32,7 @@
   "type": ["Annotation"],
   "id": "b4ddd7677eef6~1",
   "created": "2017-11-27T11:58:09Z",
-  "dc:dateAccepted": false,
+  "dcterms:dateAccepted": false,
   "dc:title": "Ultraviolett-Aufnahme",
   "body": {
     "type": "SpecificResource",
@@ -54,7 +54,7 @@
   "type": ["Annotation"],
   "id": "BNgAWVT6Tlm034vtaHNl-Q~1",
   "created": "2017-11-24T12:47:33Z",
-  "dc:dateAccepted": false,
+  "dcterms:dateAccepted": false,
   "dc:title": "z",
   "body": [
     { "format": "text/html",

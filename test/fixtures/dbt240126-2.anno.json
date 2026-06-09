@@ -44,8 +44,8 @@
     "type": "Person"
   },
   "dc:language": "de-DE",
-  "dc:isVersionOf": "doibot-datacite-test-240126",
-  "dc:replaces": "http://localhost:33321/anno/doibot-datacite-test-240126~1",
+  "dcterms:isVersionOf": "doibot-datacite-test-240126",
+  "dcterms:replaces": "http://localhost:33321/anno/doibot-datacite-test-240126~1",
   "iana:latest-version": "http://localhost:33321/anno/doibot-datacite-test-240126",
   "iana:version-history": "doibot-datacite-test-240126/versions",
   "rights": "https://creativecommons.org/publicdomain/zero/1.0/",

@@ -14,8 +14,8 @@
     "name": "R. Sterr",
     "type": "Person"
   },
-  "dc:dateAccepted": "2023-06-22T16:02:03.000Z",
-  "dc:isVersionOf": "test-esau-spam-rsterr",
+  "dcterms:dateAccepted": "2023-06-22T16:02:03.000Z",
+  "dcterms:isVersionOf": "test-esau-spam-rsterr",
   "dc:title": "Erster!!!1! 💯",
   "iana:latest-version": "test-esau-spam-rsterr",
   "iana:version-history": "test-esau-spam-rsterr/versions",

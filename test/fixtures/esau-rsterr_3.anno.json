@@ -14,9 +14,9 @@
     "name": "R. Sterr",
     "type": "Person"
   },
-  "dc:isVersionOf": "test-esau-spam-rsterr",
+  "dcterms:isVersionOf": "test-esau-spam-rsterr",
   "dc:language": "de-DE",
-  "dc:replaces": "test-esau-spam-rsterr~2",
+  "dcterms:replaces": "test-esau-spam-rsterr~2",
   "dc:title": "Erster!!!1! 💯",
   "iana:latest-version": "test-esau-spam-rsterr",
   "iana:version-history": "test-esau-spam-rsterr/versions",

@@ -48,9 +48,9 @@ const EX = {
   convert(cfg, anno) {
     const popAnno = objPop(anno, { mustBe }).mustBe;
     const annoIdUrl = popAnno.nest('id');
-    const latestVerUrl = popAnno.nest('dc:isVersionOf');
+    const latestVerUrl = popAnno.nest('dcterms:isVersionOf');
     const { versNum } = EX.parseVersId(annoIdUrl);
-    const prevReviUrl = popAnno('nonEmpty str | undef', 'dc:replaces');
+    const prevReviUrl = popAnno('nonEmpty str | undef', 'dcterms:replaces');
     const hasPreviousVersion = Boolean(prevReviUrl);
 
     const subjectTargets = guessSubjectTargets.multi(anno);
